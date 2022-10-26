@@ -7,8 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @SpringBootApplication(
     scanBasePackages = [
-        "com.asterlsker.housepit.api",
-        "com.asterlsker.housepit.core"
+        "com.asterlsker.housepit"
     ]
 )
 @EnableJpaRepositories(basePackages = ["com.asterlsker.housepit.core"])
