@@ -1,6 +1,6 @@
 package com.asterlsker.housepit.api.common.config
 
-import com.asterlsker.housepit.api.common.interceptor.AuthInterceptor
+import com.asterlsker.housepit.api.presentation.common.interceptor.AuthInterceptor
 import com.asterlsker.housepit.core.converter.GenericEnumConverter
 import org.springframework.context.annotation.Configuration
 import org.springframework.format.FormatterRegistry
