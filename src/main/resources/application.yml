@@ -1,4 +1,13 @@
 spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
   config:
     import:
       - db.yml
+      - auth.yml
+
+
+kotest:
+  framework:
+    classpath.scanning.config.disable: true
+    config.fqn: com.wibble.KotestConfig
