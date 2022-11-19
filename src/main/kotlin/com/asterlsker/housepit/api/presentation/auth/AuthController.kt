@@ -6,10 +6,10 @@ import com.asterlsker.housepit.api.common.AUTH_REFRESH
 import com.asterlsker.housepit.api.common.AUTH_SIGNIN
 import com.asterlsker.housepit.api.common.AUTH_SIGNOUT
 import com.asterlsker.housepit.api.common.response.CommonResponse
-import com.asterlsker.housepit.api.presentation.auth.dto.LinkReq
-import com.asterlsker.housepit.api.presentation.auth.dto.RefreshRes
-import com.asterlsker.housepit.api.presentation.auth.dto.SignInReq
-import com.asterlsker.housepit.api.presentation.auth.dto.SignInRes
+import com.asterlsker.housepit.api.presentation.auth.data.LinkReq
+import com.asterlsker.housepit.api.presentation.auth.data.RefreshRes
+import com.asterlsker.housepit.api.presentation.auth.data.SignInReq
+import com.asterlsker.housepit.api.presentation.auth.data.SignInRes
 import com.asterlsker.housepit.api.presentation.common.utils.TokenHandler
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

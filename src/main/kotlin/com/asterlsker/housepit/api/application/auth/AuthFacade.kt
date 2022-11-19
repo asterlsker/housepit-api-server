@@ -22,12 +22,12 @@ class AuthFacade(
     }
 
     fun link(accessToken: String, provider: OAuth2Provider, idToken: String) {
-        try {
+//        try {
             val tokenProviderData = TokenProviderData(provider, idToken, accessToken)
             authService.link(tokenProviderData)
-        } catch (e: Exception) {
-            throw ExternalServerException(msg = e.message, errors = listOf("related module: auth"))
-        }
+//        } catch (e: Exception) {
+//            throw ExternalServerException(msg = e.message, errors = listOf("related module: auth"))
+//        }
     }
 
     fun signOut(accessToken: String) {

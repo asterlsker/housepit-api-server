@@ -1,11 +1,8 @@
 spring:
+  profiles:
+    default: local
   jackson:
     property-naming-strategy: SNAKE_CASE
-  config:
-    import:
-      - db.yml
-      - auth.yml
-
 
 kotest:
   framework:

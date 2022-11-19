@@ -1,4 +1,4 @@
-package com.asterlsker.housepit.api.presentation.auth.dto
+package com.asterlsker.housepit.api.presentation.auth.data
 
 import com.asterlsker.housepit.auth.domain.data.TokenData
 
