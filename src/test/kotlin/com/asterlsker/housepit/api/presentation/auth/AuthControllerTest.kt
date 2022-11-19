@@ -1,9 +1,9 @@
 package com.asterlsker.housepit.api.presentation.auth
 
 import com.asterlsker.housepit.api.common.*
-import com.asterlsker.housepit.api.presentation.auth.dto.LinkReq
-import com.asterlsker.housepit.api.presentation.auth.dto.RefreshRes
-import com.asterlsker.housepit.api.presentation.auth.dto.SignInReq
+import com.asterlsker.housepit.api.presentation.auth.data.LinkReq
+import com.asterlsker.housepit.api.presentation.auth.data.RefreshRes
+import com.asterlsker.housepit.api.presentation.auth.data.SignInReq
 import com.asterlsker.housepit.api.presentation.common.config.StandaloneControllerConfig
 import com.asterlsker.housepit.auth.domain.data.TokenData
 import com.asterlsker.housepit.core.enums.OAuth2Provider
