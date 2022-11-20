@@ -1,7 +1,7 @@
 package com.asterlsker.housepit.api.presentation.meet.request.dto
 
 import java.time.LocalDateTime
-import com.asterlsker.housepit.api.domain.meet.command.dto.MeetScheduleDto as MeetScheduleDomainDto
+import com.asterlsker.housepit.domain.meet.command.dto.MeetScheduleDto as MeetScheduleDomainDto
 
 data class MeetScheduleDto(
     val startAt: LocalDateTime,

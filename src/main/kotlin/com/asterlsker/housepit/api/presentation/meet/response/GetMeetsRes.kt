@@ -1,7 +1,7 @@
 package com.asterlsker.housepit.api.presentation.meet.response
 
-import com.asterlsker.housepit.api.domain.meet.result.MeetResult
-import com.asterlsker.housepit.api.domain.meet.result.MeetsResult
+import com.asterlsker.housepit.domain.meet.result.MeetResult
+import com.asterlsker.housepit.domain.meet.result.MeetsResult
 
 data class GetMeetsRes(
     val meets: List<MeetResult>,
@@ -13,7 +13,7 @@ data class GetMeetsRes(
         fun of(result: MeetsResult): GetMeetsRes {
             return GetMeetsRes(
                 meets = result.meets,
-                pageNumber = result.pageNumber,
+                pageNumber = result.pageOffset,
                 pageSize = result.pageSize
             )
         }

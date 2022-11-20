@@ -6,13 +6,22 @@ import org.springframework.http.ResponseEntity
 import org.springframework.http.converter.HttpMessageConverter
 import org.springframework.http.server.ServerHttpRequest
 import org.springframework.http.server.ServerHttpResponse
+import org.springframework.web.bind.WebDataBinder
+import org.springframework.web.bind.annotation.InitBinder
 import org.springframework.web.bind.annotation.RestControllerAdvice
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice
+
 
 @RestControllerAdvice
 class ResponseAdvice : ResponseBodyAdvice<Any> {
     override fun supports(returnType: MethodParameter, converterType: Class<out HttpMessageConverter<*>>): Boolean {
         return returnType.parameterType != ResponseEntity::class.java
+    }
+
+
+    @InitBinder
+    fun initBinder(binder: WebDataBinder) {
+        binder.initDirectFieldAccess()
     }
 
     override fun beforeBodyWrite(
