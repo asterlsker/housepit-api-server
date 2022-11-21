@@ -9,3 +9,4 @@ const val AUTH_REFRESH = "/auth/refresh"
 // Meet
 const val MEET = "/meet"
 const val MEETS = "/meets"
+const val MEET_MEETID = "/meet/{meet-id}"
